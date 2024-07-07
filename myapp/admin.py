@@ -1,3 +1,7 @@
+# myapp/admin.py
 from django.contrib import admin
+from .models import ContactMessage
 
-# Register your models here.
+@admin.register(ContactMessage)
+class ContactMessageAdmin(admin.ModelAdmin):
+    list_display = ('name', 'email', 'project', 'created_at')  # Assuming created_at is a DateTimeField in ContactMessage

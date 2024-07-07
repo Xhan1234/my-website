@@ -1,0 +1,50 @@
+2024-07-07 10:54:58,020 INFO Watching for file changes with StatReloader
+2024-07-07 10:57:03,793 INFO C:\Users\Developer\Desktop\HallaTech\hallatech\myapp\views.py changed, reloading.
+2024-07-07 10:57:04,715 INFO Watching for file changes with StatReloader
+2024-07-07 10:59:30,068 INFO Watching for file changes with StatReloader
+2024-07-07 11:05:14,205 INFO C:\Users\Developer\Desktop\HallaTech\hallatech\myapp\views.py changed, reloading.
+2024-07-07 11:05:15,220 INFO Watching for file changes with StatReloader
+2024-07-07 11:05:18,548 INFO Watching for file changes with StatReloader
+2024-07-07 11:06:17,980 INFO C:\Users\Developer\Desktop\HallaTech\hallatech\myapp\views.py changed, reloading.
+2024-07-07 11:06:18,934 INFO Watching for file changes with StatReloader
+2024-07-07 11:07:54,962 INFO Watching for file changes with StatReloader
+2024-07-07 11:08:26,940 INFO Watching for file changes with StatReloader
+2024-07-07 11:09:06,795 INFO Watching for file changes with StatReloader
+2024-07-07 11:12:19,546 INFO C:\Users\Developer\Desktop\HallaTech\hallatech\myapp\urls.py changed, reloading.
+2024-07-07 11:12:20,686 INFO Watching for file changes with StatReloader
+2024-07-07 11:13:44,522 INFO Watching for file changes with StatReloader
+2024-07-07 11:16:52,674 INFO Watching for file changes with StatReloader
+2024-07-07 11:20:50,529 INFO Watching for file changes with StatReloader
+2024-07-07 11:23:06,752 INFO C:\Users\Developer\Desktop\HallaTech\hallatech\myapp\urls.py changed, reloading.
+2024-07-07 11:23:11,034 INFO Watching for file changes with StatReloader
+2024-07-07 11:23:20,990 ERROR Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "C:\Users\Developer\anaconda3\envs\DjangoEnv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Developer\anaconda3\envs\DjangoEnv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Developer\Desktop\HallaTech\hallatech\myapp\views.py", line 46, in contact_view
+    return redirect('contact_success_view')  # Correct redirect to success view
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Developer\anaconda3\envs\DjangoEnv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Developer\anaconda3\envs\DjangoEnv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Developer\anaconda3\envs\DjangoEnv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Developer\anaconda3\envs\DjangoEnv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'contact_success_view' not found. 'contact_success_view' is not a valid view function or pattern name.
+2024-07-07 11:25:02,349 INFO C:\Users\Developer\Desktop\HallaTech\hallatech\myapp\views.py changed, reloading.
+2024-07-07 11:25:03,334 INFO Watching for file changes with StatReloader
+2024-07-07 11:28:47,616 INFO Watching for file changes with StatReloader
+2024-07-07 11:30:52,176 WARNING Not Found: /img/about-1.jpg
+2024-07-07 11:30:52,183 WARNING Not Found: /img/about-2.jpg
+2024-07-07 11:32:30,551 INFO Watching for file changes with StatReloader
+2024-07-07 11:32:32,834 WARNING Not Found: /img/about-1.jpg
+2024-07-07 11:32:32,838 WARNING Not Found: /img/about-2.jpg

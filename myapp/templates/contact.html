@@ -165,7 +165,7 @@
             <h5 class="text-primary">Get In Touch</h5>
             <h1 class="mb-3">Contact for any query</h1>
             <p class="mb-2">We appreciate your interest in Halla Technologies.</p>
-            <p class="mb-2"> Please feel free to contact us, we are happy to hear from you. </p>
+            <p class="mb-2">Please feel free to contact us, we are happy to hear from you.</p>
         </div>
         <div class="contact-detail position-relative p-5">
             <div class="row g-5 mb-5 justify-content-center">
@@ -202,8 +202,7 @@
                         </div>
                         <div class="ms-3">
                             <h4 class="text-primary">Email Us</h4>
-                            <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">contact@
-                                hallatechnologies.com</a>
+                            <a href="mailto:contact@hallatechnologies.com" class="h5">contact@hallatechnologies.com</a>
                         </div>
                     </div>
                 </div>
@@ -219,22 +218,28 @@
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
                     <div class="p-5 rounded contact-form">
-                        <div class="mb-4">
-                            <input type="text" class="form-control border-0 py-3" placeholder="Your Name">
-                        </div>
-                        <div class="mb-4">
-                            <input type="email" class="form-control border-0 py-3" placeholder="Your Email">
-                        </div>
-                        <div class="mb-4">
-                            <input type="text" class="form-control border-0 py-3" placeholder="Project">
-                        </div>
-                        <div class="mb-4">
-                            <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10"
-                                      placeholder="Message"></textarea>
-                        </div>
-                        <div class="text-start">
-                            <button class="btn bg-primary text-white py-3 px-5" type="button">Send Message</button>
-                        </div>
+                        <form method="post" action="{% url 'contact' %}">
+                            {% csrf_token %}
+                            <div class="mb-4">
+                                <input type="text" name="name" class="form-control border-0 py-3"
+                                       placeholder="Your Name">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" name="email" class="form-control border-0 py-3"
+                                       placeholder="Your Email">
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" name="project" class="form-control border-0 py-3"
+                                       placeholder="Project">
+                            </div>
+                            <div class="mb-4">
+                                <textarea name="message" class="w-100 form-control border-0 py-3" rows="6"
+                                          placeholder="Message"></textarea>
+                            </div>
+                            <div class="text-start">
+                                <button type="submit" class="btn bg-primary text-white py-3 px-5">Send Message</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -332,6 +337,7 @@
 
 <!-- Template Javascript -->
 <script src="{% static 'js/main.js' %}"></script>
+
 </body>
 
 </html>
